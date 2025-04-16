@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejemplo de Sitio Web</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <title>Heladería Quinchamalí</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -13,9 +15,14 @@
         }
 
         header {
-            background-color: #333;
+            background-color: #2cc8dd;
             color: white;
             padding: 10px 0;
+            text-align: center;
+            text-shadow: 2px 2px 2px #000;
+        }
+
+        main {
             text-align: center;
         }
 
@@ -32,6 +39,7 @@
         nav ul li {
             display: inline;
             margin-right: 10px;
+            font-weight: bold;
         }
 
         nav ul li a {
@@ -45,6 +53,7 @@
             text-align: center;
         }
 
+
         .contenido {
             padding: 20px;
         }
@@ -53,21 +62,41 @@
             margin-bottom: 20px;
         }
 
-        .contenido article img {
-            max-width: 100%;
-            height: auto;
+        footer {
+            background-color: #2cc8dd;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            text-shadow: 2px 2px 2px #000;
+
         }
 
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-        }
+        a{
+            text-decoration: none;
+            color: #fff        }
 
         .redes-sociales img {
             width: 30px;
             margin: 0 10px;
+        }
+
+        .contenido img {
+            border-radius: 50%;
+            max-width: 15em;
+            margin: 0 10px;
+            height: auto;
+        }
+
+        .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+        }
+
+        address {
+            font-style: normal;
         }
     </style>
 </head>
@@ -75,41 +104,55 @@
     <header>
         <div class="logo">
             <img src="logo.png" alt="Logo de la Empresa">
+            <h1>Heladería Quinchamalí</h1>
         </div>
         <nav>
             <ul>
                 <li><a href="#">Inicio</a></li>
-                <li><a href="#">Servicios</a></li>
-                <li><a href="#">Nosotros</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="#Servicios">Servicios</a></li>
+                <li><a href="#Nosotros">Nosotros</a></li>
+                <li><a href="#Contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
+    <hr>
     <main>
         <section class="banner">
-            <h1>Bienvenidos a Nuestro Sitio Web</h1>
-            <p>Ofrecemos los mejores servicios para ti.</p>
+            <h1>Bienvenidos a Heladería Quinchamalí</h1>
+            <p>Los mejores helados artesanales de la provincia de Concepción.</p>
         </section>
+        <hr>
         <section class="contenido">
             <article>
-                <h2>Nuestros Servicios</h2>
-                <p>Descripción de los servicios ofrecidos.</p>
-                <img src="servicio1.jpg" alt="Servicio 1">
+                <h2 id="Servicios">Nuestros Servicios</h2>
+                <p>Distribuimos los más deliciosos helados para que puedas servirlos en tus negocios.</p>
+                <img src="gato helado.jpg" alt="Distribucion">
+                <p>Si necesitar decidirte, puedes disfrutarlos en nuestro local ubicado en Víctor Lamas 2025.</p>
+                <img src="gato tomando helado.jpg" alt="Consumo en local">
+                <p>También ofrecemos eventos para empresas donde tus colaboradores pueden aprender a hacer sus propios sabores.</p>
+                <img src="gato empresas.jpg" alt="Servicios empresas">
+
             </article>
+            <hr>
             <article>
-                <h2>Sobre Nosotros</h2>
-                <p>Información sobre la empresa.</p>
-                <img src="nosotros.jpg" alt="Nosotros">
+                <h2 id="Nosotros">Sobre Nosotros</h2>
+                <p>Somos un emprendimiento de una pareja que ama los helados y busca dar mayor sabor y color a nuestra querida ciudad gris.</p>
+                <p>Comenzamos con un helado de plátano con chocolate como un tentempié en nuestras casas.</p>
+                <p>Luego invitamos a nuestros amigos a probar nuestras creaciones, y luego de mucha insistencia, comenzamos nuestra heladería. </p>
+                <img src="nosotros.avif" alt="Nosotros">
             </article>
         </section>
+        <hr>
     </main>
     <footer>
-        <p>Dirección: Calle Falsa 123, Ciudad, País</p>
-        <p>Email: contacto@empresa.com</p>
+        <address id="Contacto">
+        <p><b>Dirección</b>: Víctor Lamas 2025, Concepción, Chile.</p>
+        <p><b>WhatsApp</b>: +56 9 1234 8765 </p>
+    </address>
         <div class="redes-sociales">
-            <a href="#"><img src="facebook.png" alt="Facebook"></a>
-            <a href="#"><img src="twitter.png" alt="Twitter"></a>
-            <a href="#"><img src="instagram.png" alt="Instagram"></a>
+            <a href="#"><i class="bi bi-facebook"></i></a> 
+            <a href="#"><i class="bi bi-whatsapp"></i></a> 
+            <a href="#"><i class="bi bi-instagram"></i></a>
         </div>
     </footer>
 </body>
